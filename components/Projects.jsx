@@ -11,13 +11,13 @@ const projects = [
   {
     name: "Ecommerce",
     image: "ecommerce",
-    link: "http://localhost:3000/",
+    link: "https://github.com/VUQUYNHNGAHUYNH/E-Commerce",
     description: "React JS, Redux Toolkit, Tailwind CSS, Strapi",
   },
   {
     name: "Monster Store",
     image: "monster-store",
-    link: "http://localhost:3000/",
+    link: "https://monster-store.vercel.app/",
     description: "React JS, Context API, Bootstrap 5",
   },
   {

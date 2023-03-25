@@ -8,7 +8,7 @@ const Landing = () => {
   return (
     <div
       id="home"
-      className="sm:max-w-[80%] mx-auto w-full md:h-screen flex flex-col-reverse items-center justify-center 
+      className="max-w-[80%] mx-auto w-full md:h-screen flex flex-col-reverse items-center justify-center 
     md:flex-row md:justify-between space-x-8 py-12 text-center md:text-left"
     >
       {/* text */}
@@ -25,7 +25,7 @@ const Landing = () => {
         >
           <h1 className="py-2 mt-8 md:mt-0 ">NGA HUYNH</h1>
           <h2 className="py-2">Front-End Developer Intern </h2>
-          <p className="py-8 text-xl xl:text-2xl 2xl:text-2xl text-slate-900 font-normal">
+          <p className="py-8 text-sm xl:text-lg 2xl:text-xl text-slate-900 font-normal">
             As a computer science student with a passion for front-end
             development, I am seeking an internship opportunity that will allow
             me to apply my skills and gain hands-on experience in creating
