@@ -81,7 +81,7 @@ const Projects = () => {
           <p className="text-base md:text-xl xl:text-3xl py-4 xl:py-8">
             {currentProject.description}
           </p>
-          <Link href="http://localhost:3000/">
+          <Link href={`${currentProject.link}`}>
             <button>Link to website</button>
           </Link>
         </div>
