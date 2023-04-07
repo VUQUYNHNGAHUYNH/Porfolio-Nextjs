@@ -3,27 +3,4 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
-}
 
-@layer base{
-    body{
-    }
-    h1{
-        @apply text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-playfair font-extrabold tracking-wider text-sky-600
-    }
-    h2{
-        @apply text-2xl md:text-3xl xl:text-5xl 2xl:text-5xl font-medium 
-    }
-    h3{
-        @apply text-xl md:text-2xl 2xl:text-3xl font-medium
-    }
-    li{
-        @apply cursor-pointer
-    }
-    button{
-        @apply font-medium shadow-md  shadow-gray-400 text-base uppercase hover:scale-95 transition duration-300 px-5 py-2.5 text-center rounded-xl text-white 
-        bg-gradient-to-r from-green-400 via-cyan-900 to-sky-500
-    }
-}

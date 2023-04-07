@@ -94,7 +94,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-8 justify-center items-center mt-20">
             {navLinks.map((nav) => (
               <Link
-                key={nav.id}
+                key={nav.id} 
                 href={`#${nav.id}`}
                 className="uppercase hover:text-rose-400 text-2xl"
                 onClick={() => setMenu(!menu)}
