@@ -79,6 +79,7 @@ const Projects = () => {
             <Project
               title="Blog Application"
               description="This blog website leverages the power of GraphQl, Hygraph Headless CMS, and Tailwind CSS to enable seamless content management, lightning-fast page load times, and a sleek, modern design."
+              img={blog}
               link="https://blog-hygraph-nga.vercel.app/"
               github="https://github.com/VUQUYNHNGAHUYNH/blog_hygraph"
             />
