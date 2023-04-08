@@ -53,6 +53,7 @@ const Project = ({ title, description, img, link, github }) => {
 const Projects = () => {
   return (
     <>
+      <TransitionEffect />
       <div className="w-full flex flex-col items-center justify-center text-slate-800 mt-12">
         <AnimatedText text="Projects" className="lg:ml-24" />
         <AnimatedText text="What I have built?" className="lg:ml-24" />
@@ -71,8 +72,8 @@ const Projects = () => {
               title="Fitness Application"
               description="Utilized the power of Tailwind CSS to create a responsive website that adjusts to various screen sizes and devices, providing users with a seamless experience."
               img={fitness}
-              link="https://monster-store.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
+              link="https://fitness-nga.vercel.app/"
+              github="https://github.com/VUQUYNHNGAHUYNH/Fitness-"
             />
           </div>
           <div className="xl:col-span-6 col-span-12">
@@ -81,7 +82,7 @@ const Projects = () => {
               description="This blog website leverages the power of GraphQl, Hygraph Headless CMS, and Tailwind CSS to enable seamless content management, lightning-fast page load times, and a sleek, modern design."
               img={monster}
               link="https://monster-store.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
+              github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
             />
           </div>
           <div className="xl:col-span-6 col-span-12">
@@ -90,8 +91,8 @@ const Projects = () => {
               title="Blog Application"
               description="Implemented Redux Toolkit and Tailwind CSS to enhance state management and streamline responsive web design. Optimized data management by utilizing Strapi CMS, resulting in increased efficiency."
               img={blog}
-              link="https://monster-store.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
+              link="https://blog-hygraph-nga.vercel.app/"
+              github="https://github.com/VUQUYNHNGAHUYNH/blog_hygraph"
             />
           </div>
         </div>
