@@ -90,7 +90,7 @@ const Projects = () => {
               description="The website uses the Context API to manage the state of the cart, allowing users to add items and keep track of their price. Bootstrap is used for styling and layout, ensuring a user-friendly experience while navigating the cart functionality."
               img={monster}
               link="https://monster-store.vercel.app/"
-              https:github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
+              github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
             />
           </div>
         </div>
