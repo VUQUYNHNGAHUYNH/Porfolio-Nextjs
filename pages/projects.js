@@ -53,12 +53,11 @@ const Project = ({ title, description, img, link, github }) => {
 const Projects = () => {
   return (
     <>
-      <TransitionEffect />
       <div className="w-full flex flex-col items-center justify-center text-slate-800 mt-12">
         <AnimatedText text="Projects" className="lg:ml-24" />
         <AnimatedText text="What I have built?" className="lg:ml-24" />
         <div className="grid grid-cols-12 items-center justify-center gap-6 py-8">
-          <div className="xl:col-span-6 items-center justify-center col-span-12 gap-14">
+          <div className="xl:col-span-6 col-span-12">
             <Project
               title="Ecommerce Application"
               description="Implemented Redux Toolkit and Tailwind CSS to enhance state management and streamline responsive web design. Optimized data management by utilizing Strapi CMS, resulting in increased efficiency."
@@ -78,21 +77,19 @@ const Projects = () => {
           </div>
           <div className="xl:col-span-6 col-span-12">
             <Project
-              title="Monster Store Application"
+              title="Blog Application"
               description="This blog website leverages the power of GraphQl, Hygraph Headless CMS, and Tailwind CSS to enable seamless content management, lightning-fast page load times, and a sleek, modern design."
-              img={monster}
-              link="https://monster-store.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
+              link="https://blog-hygraph-nga.vercel.app/"
+              github="https://github.com/VUQUYNHNGAHUYNH/blog_hygraph"
             />
           </div>
           <div className="xl:col-span-6 col-span-12">
-            {" "}
             <Project
-              title="Blog Application"
-              description="Implemented Redux Toolkit and Tailwind CSS to enhance state management and streamline responsive web design. Optimized data management by utilizing Strapi CMS, resulting in increased efficiency."
-              img={blog}
-              link="https://blog-hygraph-nga.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/blog_hygraph"
+              title="Monster Store Application"
+              description="The website uses the Context API to manage the state of the cart, allowing users to add items and keep track of their price. Bootstrap is used for styling and layout, ensuring a user-friendly experience while navigating the cart functionality."
+              img={monster}
+              link="https://monster-store.vercel.app/"
+              https:github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
             />
           </div>
         </div>

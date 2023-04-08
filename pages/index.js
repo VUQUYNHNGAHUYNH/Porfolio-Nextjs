@@ -42,7 +42,7 @@ export default function Home() {
             <Link
               href="https://github.com/VUQUYNHNGAHUYNH"
               target={"_blank"}
-              className="flex items-center justify-center bg-slate-900 text-white p-2.5 2xl:p-4 px-6 2xl:px-8 rounded-lg text-2xl 2xl:text-3xl font-medium
+              className="flex items-start bg-slate-900 text-white p-2.5 2xl:p-4 px-6 2xl:px-8 rounded-lg text-2xl 2xl:text-3xl font-medium
            hover:bg-white hover:text-slate-900 hover:border-2 hover:border-slate-900"
               download={true}
             >
