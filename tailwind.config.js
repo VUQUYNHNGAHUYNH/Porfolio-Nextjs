@@ -14,6 +14,9 @@ module.exports = {
         playfair: ["Playfair Display", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+      },
     },
 
     plugins: [],
