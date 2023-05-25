@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FaGithub } from "react-icons/fa";
-import blog from "../public/projects/blog.png";
+import hotelapp from "../public/projects/hotelapp.png";
 import ecommerce from "../public/projects/ecommerce.jpg";
-import monster from "../public/projects/monster-store.png";
+import pizza1 from "../public/projects/pizza1.png";
 import fitness from "../public/projects/fitness.png";
 
 import AnimatedText from "@/components/AnimatedText";
@@ -20,9 +20,9 @@ const Project = ({ title, description, img, link, github }) => {
         <Link
           href={link}
           target="_blank"
-          className="md:w-1/2 hidden md:inline-block cursor-pointer overflow-hidden rounded-xl"
+          className="hidden md:inline-block cursor-pointer overflow-hidden rounded-xl md:w-1/2"
         >
-          <Image src={img} alt={title} className="md:h-[280px] xl:h-[380px]" />
+          <Image src={img} alt={title} />
         </Link>
         {/* title and description */}
         <div className="w-full md:w-1/2 mx-auto flex flex-col py-2 space-y-2 md:pl-6">
@@ -31,7 +31,7 @@ const Project = ({ title, description, img, link, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="text-sm lg:text-base  2xl:text-lg">{description}</p>
+          <p className="text-sm lg:text-base 2xl:text-xl">{description}</p>
           <div className="flex items-center justify-center mx-auto">
             <Link href={github} target="_blank">
               <FaGithub size={28} />
@@ -56,43 +56,37 @@ const Projects = () => {
       <div className="w-full flex flex-col items-center justify-center text-slate-800 mt-12">
         <AnimatedText text="Projects" className="lg:ml-24" />
         <AnimatedText text="What I have built?" className="lg:ml-24" />
-        <div className="grid grid-cols-12 items-center justify-center gap-6 py-8">
-          <div className="xl:col-span-6 col-span-12">
-            <Project
-              title="Ecommerce Application"
-              description="Implemented Redux Toolkit and Tailwind CSS to enhance state management and streamline responsive web design. Optimized data management by utilizing Strapi CMS, resulting in increased efficiency."
-              img={ecommerce}
-              link="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
-              github="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
-            />
-          </div>
-          <div className="xl:col-span-6 col-span-12">
-            <Project
-              title="Fitness Application"
-              description="Utilized the power of Tailwind CSS to create a responsive website that adjusts to various screen sizes and devices, providing users with a seamless experience."
-              img={fitness}
-              link="https://fitness-nga.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/Fitness-"
-            />
-          </div>
-          <div className="xl:col-span-6 col-span-12">
-            <Project
-              title="Blog Application"
-              description="This blog website leverages the power of GraphQl, Hygraph Headless CMS, and Tailwind CSS to enable seamless content management, lightning-fast page load times, and a sleek, modern design."
-              img={blog}
-              link="https://blog-hygraph-nga.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/blog_hygraph"
-            />
-          </div>
-          <div className="xl:col-span-6 col-span-12">
-            <Project
-              title="Monster Store Application"
-              description="The website uses the Context API to manage the state of the cart, allowing users to add items and keep track of their price. Bootstrap is used for styling and layout, ensuring a user-friendly experience while navigating the cart functionality."
-              img={monster}
-              link="https://monster-store.vercel.app/"
-              github="https://github.com/VUQUYNHNGAHUYNH/monster-react"
-            />
-          </div>
+        <div className="flex flex-col lg:w-[80%] items-center justify-center mx-auto gap-8 lg:gap-10 py-8">
+          <Project
+            title="Pizza Application"
+            description="The website uses the Context API to manage the state of the cart, allowing users to add items and keep track of their price. Tailwind is used for styling and layout, ensuring a user-friendly experience while navigating the cart functionality."
+            img={pizza1}
+            link="https://pizza-shop-nga.vercel.app/"
+            github="https://github.com/VUQUYNHNGAHUYNH/pizza"
+          />
+
+          <Project
+            title="Hotel Application"
+            description="This is a hotel booking website where you can browse and book accommodations for your upcoming trip. Property owners can also list their properties for potential guests to book."
+            img={hotelapp}
+            link="https://hotels-web.vercel.app/"
+            github="https://github.com/VUQUYNHNGAHUYNH/hotels-app"
+          />
+
+          <Project
+            title="Ecommerce Application"
+            description="Implemented Redux Toolkit and Tailwind CSS to enhance state management and streamline responsive web design. Optimized data management by utilizing Strapi CMS, resulting in increased efficiency."
+            img={ecommerce}
+            link="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
+            github="https://github.com/VUQUYNHNGAHUYNH/E-Commerce"
+          />
+          <Project
+            title="Fitness Application"
+            description="Utilized the power of Tailwind CSS to create a responsive website that adjusts to various screen sizes and devices, providing users with a seamless experience."
+            img={fitness}
+            link="https://fitness-nga.vercel.app/"
+            github="https://github.com/VUQUYNHNGAHUYNH/Fitness-"
+          />
         </div>
       </div>
     </>
