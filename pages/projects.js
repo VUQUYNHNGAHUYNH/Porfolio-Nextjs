@@ -31,7 +31,9 @@ const Project = ({ title, description, img, link, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="text-sm lg:text-base 2xl:text-xl">{description}</p>
+          <p className="text-sm lg:text-base xl:text-xl 2xl:text-xl">
+            {description}
+          </p>
           <div className="flex items-center justify-center mx-auto">
             <Link href={github} target="_blank">
               <FaGithub size={28} />
@@ -56,7 +58,7 @@ const Projects = () => {
       <div className="w-full flex flex-col items-center justify-center text-slate-800 mt-12">
         <AnimatedText text="Projects" className="lg:ml-24" />
         <AnimatedText text="What I have built?" className="lg:ml-24" />
-        <div className="flex flex-col lg:w-[80%] items-center justify-center mx-auto gap-8 lg:gap-10 py-8">
+        <div className="flex flex-col lg:w-[90%] items-center justify-center mx-auto gap-8 lg:gap-10 py-8">
           <Project
             title="Pizza Application"
             description="The website uses the Context API to manage the state of the cart, allowing users to add items and keep track of their price. Tailwind is used for styling and layout, ensuring a user-friendly experience while navigating the cart functionality."
