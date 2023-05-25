@@ -1,4 +1,8 @@
-This is my portfolio website built using Next.js and Tailwind CSS. It consists of four main pages - Home, Skills, Projects, and Contact - each designed to showcase my skills, experience, and projects.
+# My portfolio website built using Next.js and Tailwind CSS.
+
+![porfolio](porfolio.png)
+
+It consists of four main pages - Home, Skills, Projects, and Contact - each designed to showcase my skills, experience, and projects.
 
 The Home page provides a brief introduction to myself and my work, with links to my social media profiles and resume. The Skills page lists my areas of expertise and technical skills.
 
